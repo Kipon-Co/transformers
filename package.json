@@ -1,5 +1,5 @@
 {
-  "name": "@kipon/transformers",
+  "name": "@kipon.io/transformers",
   "version": "0.0.1",
   "description": "Transform columnar SQL results into complex nested JSON objects with custom transformations",
   "author": "Kipon",
