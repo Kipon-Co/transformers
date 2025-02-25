@@ -1,4 +1,8 @@
-# JSON Transformer
+<p align="">
+  <img src="https://github.com/user-attachments/assets/99c4a739-826b-474f-a340-d6e622cc4464" />
+</p>
+
+# Transformers (JSON Mapping)
 
 Package to transform columnar results from SQL queries (with joins) into complex JSON objects with nested relationships, with support for custom transformations.
 
@@ -496,6 +500,5 @@ Contributions are welcome! Please feel free to submit a PR.
 ## License
 
 MIT
-```
 
 This README includes a comprehensive Table of Contents with anchor links to each section, making it easy for users to navigate the documentation. The content covers all aspects of the library, from basic usage to advanced features and integration with various SQL libraries.
