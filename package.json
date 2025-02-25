@@ -1,11 +1,13 @@
 {
-  "name": "json-transformer",
-  "version": "1.0.0",
+  "name": "@kipon.io/transformers",
+  "version": "0.0.1",
   "description": "Transform columnar SQL results into complex nested JSON objects with custom transformations",
   "author": "Kipon",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -27,6 +29,7 @@
     "es-toolkit": "~1.32.0"
   },
   "devDependencies": {
+    "@jest/globals": "~29.7.0",
     "@types/jest": "~29.5.14",
     "@types/node": "~22.13.5",
     "@typescript-eslint/eslint-plugin": "~8.25.0",
@@ -36,5 +39,8 @@
     "prettier": "~3.5.2",
     "ts-jest": "~29.2.6",
     "typescript": "~5.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
