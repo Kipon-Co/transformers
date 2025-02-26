@@ -3,15 +3,14 @@
     "target": "es2019",
     "module": "NodeNext",
     "moduleResolution": "nodenext",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "types": ["node", "jest"]
+    // "esModuleInterop": true,
+    // "skipLibCheck": true,
+    "incremental": false,
+    "types": ["node"]
   },
-  "include": ["src", "tests"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

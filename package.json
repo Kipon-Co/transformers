@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build",
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",

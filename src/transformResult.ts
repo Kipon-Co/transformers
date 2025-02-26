@@ -1,7 +1,7 @@
 // src/transformResult.ts
 
-import { TransformSchema } from './types.ts';
-import { groupRowsBy, processOneRelations, processManyRelations, applyTransforms, cleanupBase } from './helpers.ts';
+import { TransformSchema } from './types';
+import { groupRowsBy, processOneRelations, processManyRelations, applyTransforms, cleanupBase } from './helpers';
 
 /**
  * Transforms SQL query result rows into a structured object (or array of objects) based on the provided schema.
