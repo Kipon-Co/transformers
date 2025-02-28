@@ -1,6 +1,6 @@
 {
   "name": "@kipon.io/transformers",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Transform columnar SQL results into complex nested JSON objects with custom transformations",
   "author": "Kipon",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build",
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",

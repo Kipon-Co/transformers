@@ -1,5 +1,5 @@
 // src/index.ts
 
-export * from './transformResult.ts';
-export * from './factory.ts';
-export * from './types.ts';
+export * from './transformResult';
+export * from './factory';
+export * from './types';

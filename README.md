@@ -34,13 +34,13 @@ Package to transform columnar results from SQL queries (with joins) into complex
 
 ```bash
 # Using npm
-npm install json-sql-transformer
+npm install @kipon.io/transformers
 
 # Using yarn
-yarn add json-sql-transformer
+yarn add @kipon.io/transformers
 
 # Using pnpm
-pnpm add json-sql-transformer
+pnpm add @kipon.io/transformers
 ```
 
 ## Features
@@ -57,7 +57,7 @@ pnpm add json-sql-transformer
 ## Basic Usage
 
 ```typescript
-import { transformResult } from 'json-sql-transformer';
+import { transformResult } from '@kipon.io/transformers';
 
 // Result from a SQL query with joins
 const queryResults = [
@@ -99,7 +99,7 @@ console.log(result);
 ## Value Transformations
 
 ```typescript
-import { transformResult } from 'json-sql-transformer';
+import { transformResult } from '@kipon.io/transformers';
 
 const result = transformResult(queryResults, {
   transforms: {
@@ -123,7 +123,7 @@ const result = transformResult(queryResults, {
 ## Nested Relationships
 
 ```typescript
-import { transformResult } from 'json-sql-transformer';
+import { transformResult } from '@kipon.io/transformers';
 
 const result = transformResult(queryResults, {
   one: [
@@ -169,7 +169,7 @@ const result = transformResult(queryResults, {
 ## Using TransformFactory
 
 ```typescript
-import { TransformFactory } from 'json-sql-transformer';
+import { TransformFactory } from '@kipon.io/transformers';
 
 // Create specific transformations
 const dateTransforms = TransformFactory.datesToDate('created_at', 'updated_at');
@@ -196,7 +196,7 @@ const result = transformResult(queryResults, schema);
 ## Creating Reusable Transformers
 
 ```typescript
-import { TransformFactory } from 'json-sql-transformer';
+import { TransformFactory } from '@kipon.io/transformers';
 
 // Create a reusable transformer
 const userTransformer = TransformFactory.createTransformer({
@@ -383,7 +383,7 @@ Utility for creating and combining transformations.
 
 ```typescript
 import { Pool } from 'pg';
-import { transformResult } from 'json-sql-transformer';
+import { transformResult } from '@kipon.io/transformers';
 
 const pool = new Pool();
 
@@ -414,7 +414,7 @@ async function getUserWithRelations(userId) {
 
 ```typescript
 import * as squel from 'squel-ts';
-import { transformResult } from 'json-sql-transformer';
+import { transformResult } from '@kipon.io/transformers';
 
 async function getUsersWithRelations(db) {
   const query = squel.select()
@@ -440,7 +440,7 @@ async function getUsersWithRelations(db) {
 
 ```typescript
 import { Client } from 'serverless-postgres';
-import { transformResult, TransformFactory } from 'json-sql-transformer';
+import { transformResult, TransformFactory } from '@kipon.io/transformers';
 
 const pgClient = new Client({
   connectionString: process.env.DATABASE_URL
@@ -496,9 +496,3 @@ Contributions are welcome! Please feel free to submit a PR.
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-feature`
 5. Submit a pull request
-
-## License
-
-MIT
-
-This README includes a comprehensive Table of Contents with anchor links to each section, making it easy for users to navigate the documentation. The content covers all aspects of the library, from basic usage to advanced features and integration with various SQL libraries.

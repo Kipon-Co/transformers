@@ -1,7 +1,7 @@
 // src/factory.ts
 
-import { TransformSchema } from './types.ts';
-import { transformResult } from './transformResult.ts';
+import { TransformSchema } from './types';
+import { transformResult } from './transformResult';
 
 export class TransformFactory {
   /**
